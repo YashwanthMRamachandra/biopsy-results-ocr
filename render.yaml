@@ -4,8 +4,8 @@ services:
     env: python
     plan: free
     buildCommand: |
-      sudo apt-get update -y
-      sudo apt-get install -y tesseract-ocr tesseract-ocr-eng libtesseract-dev
+      apt-get update -y
+      apt-get install -y tesseract-ocr tesseract-ocr-eng libtesseract-dev
       pip install --upgrade pip
       pip install -r requirements.txt
     startCommand: streamlit run app.py --server.port $PORT --server.address 0.0.0.0
