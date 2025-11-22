@@ -1,7 +1,7 @@
 services:
   - type: web
     name: biopsy-ocr-app
-    plan: free
     env: docker
+    plan: free
     dockerfilePath: Dockerfile
-    autoDeploy: true
+    region: oregon
