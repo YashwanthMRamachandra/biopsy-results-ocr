@@ -1,10 +1,10 @@
 previews:
   generation: automatic
+
 services:
   - type: web
     name: biopsy-ocr-app
     runtime: docker
-    repo: https://github.com/YashwanthMRamachandra/biopsy-results-ocr.git
     rootDir: .
     plan: free
     dockerfilePath: Dockerfile
