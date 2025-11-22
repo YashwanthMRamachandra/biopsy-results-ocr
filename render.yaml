@@ -4,8 +4,8 @@ previews:
 services:
   - type: web
     name: biopsy-ocr-app
-    runtime: docker
-    rootDir: .
+    env: python
     plan: free
-    dockerfilePath: Dockerfile
     region: oregon
+    buildCommand: bash render-build.sh
+    startCommand: streamlit run app.py --server.port=$PORT --server.address=0.0.0.0
